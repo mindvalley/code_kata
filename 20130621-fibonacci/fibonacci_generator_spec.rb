@@ -18,7 +18,7 @@ describe FibonacciGenerator do
     Then { expect(generate(5)).to eq(5) }
     Then { expect(generate(6)).to eq(8) }
     Then { expect(generate(7)).to eq(13) }
-    Then { pending; expect(generate(12)).to eq(144) }
+    Then { expect(generate(12)).to eq(144) }
   end
 
   context 'with 0 and 4 as the first and second values of the sequence' do
