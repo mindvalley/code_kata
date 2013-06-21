@@ -8,11 +8,16 @@ class FibonacciGenerator
     return @second if n==1
 
     if n==2
-      (@first + @second) * 1
+      (@first + @second) * (n - 1)
     elsif n==3
-      (@first + @second) * 2
+      (@first + @second) * (n - 1)
     elsif n==4
-      (@first + @second) * 3
+      result = 0
+      while n > 2
+        n = n - 1
+        result += generate(n)
+      end
+      result
     end
   end
 end
