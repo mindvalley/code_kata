@@ -7,9 +7,9 @@ class FibonacciGenerator
     return @first if n==0
     return @second if n==1
     result = 0
-    threshold = n - 2
+    threshold = n - 1
 
-    while n > threshold
+    while n >= threshold
       n = n - 1
       result += generate(n)
     end
