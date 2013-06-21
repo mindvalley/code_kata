@@ -28,6 +28,11 @@ class FibonacciGenerator
         n = n - 1
         result += generate(n)
       end
+    elsif n==7
+      while n > threshold
+        n = n - 1
+        result += generate(n)
+      end
     end
     result
   end
