@@ -11,7 +11,7 @@ describe FibonacciGenerator do
 
   context 'with the default 0 and 1 as the first and second values of the sequence' do
     Then { expect(generate(0)).to eq(0) }
-    Then { pending; expect(generate(1)).to eq(1) }
+    Then { expect(generate(1)).to eq(1) }
     Then { pending; expect(generate(2)).to eq(1) }
     Then { pending; expect(generate(3)).to eq(2) }
     Then { pending; expect(generate(4)).to eq(3) }
