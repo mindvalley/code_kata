@@ -8,9 +8,11 @@ class FibonacciGenerator
     return @second if n==1
 
     if n==2
-      @first + @second
+      (@first + @second) * 1
     elsif n==3
-      @first + @second + (@first + @second)
+      (@first + @second) * 2
+    elsif n==4
+      (@first + @second) * 3
     end
   end
 end
