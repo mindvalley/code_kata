@@ -15,6 +15,7 @@ describe FibonacciGenerator do
     Then { expect(generate(2)).to eq(1) }
     Then { expect(generate(3)).to eq(2) }
     Then { expect(generate(4)).to eq(3) }
+    Then { expect(generate(5)).to eq(5) }
     Then { pending; expect(generate(12)).to eq(144) }
   end
 
