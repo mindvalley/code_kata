@@ -1,7 +1,7 @@
 class FibonacciGenerator
-  def initialize
-    @first = 0
-    @second = 1
+  def initialize(first = 0, second = 1)
+    @first = first
+    @second = second
   end
   def generate(n)
     return @first if n==0
