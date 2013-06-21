@@ -10,9 +10,15 @@ class FibonacciGenerator
     threshold = n - 2
 
     if n==2
-      result += (@first + @second) * (n - 1)
+      while n > threshold
+        n = n - 1
+        result += generate(n)
+      end
     elsif n==3
-      result += (@first + @second) * (n - 1)
+      while n > threshold
+        n = n - 1
+        result += generate(n)
+      end
     elsif n==4
       while n > threshold
         n = n - 1
