@@ -6,5 +6,7 @@ class FibonacciGenerator
   def generate(n)
     return @first if n==0
     return @second if n==1
+
+    @first + @second 
   end
 end
