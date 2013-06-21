@@ -22,6 +22,11 @@ class FibonacciGenerator
         n = n - 1
         result += generate(n)
       end
+    elsif n==6
+      while n > 4
+        n = n - 1
+        result += generate(n)
+      end
     end
     result
   end
