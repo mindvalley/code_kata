@@ -25,10 +25,10 @@ describe FibonacciGenerator do
     Given(:generator) { FibonacciGenerator.new(0, 4) }
 
     Then { expect(generate(0)).to eq(0) }
-    Then { pending; expect(generate(1)).to eq(4) }
-    Then { pending; expect(generate(2)).to eq(4) }
-    Then { pending; expect(generate(3)).to eq(8) }
-    Then { pending; expect(generate(4)).to eq(12) }
+    Then { expect(generate(1)).to eq(4) }
+    Then { expect(generate(2)).to eq(4) }
+    Then { expect(generate(3)).to eq(8) }
+    Then { expect(generate(4)).to eq(12) }
   end
 
   context 'for bonus points' do
