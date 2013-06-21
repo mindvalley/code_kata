@@ -22,7 +22,9 @@ describe FibonacciGenerator do
   end
 
   context 'with 0 and 4 as the first and second values of the sequence' do
-    Then { pending; expect(generate(0)).to eq(0) }
+    Given(:generator) { FibonacciGenerator.new(0, 4) }
+
+    Then { expect(generate(0)).to eq(0) }
     Then { pending; expect(generate(1)).to eq(4) }
     Then { pending; expect(generate(2)).to eq(4) }
     Then { pending; expect(generate(3)).to eq(8) }
