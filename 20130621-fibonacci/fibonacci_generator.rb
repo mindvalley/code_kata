@@ -7,23 +7,24 @@ class FibonacciGenerator
     return @first if n==0
     return @second if n==1
     result = 0
+    threshold = n - 2
 
     if n==2
       result += (@first + @second) * (n - 1)
     elsif n==3
       result += (@first + @second) * (n - 1)
     elsif n==4
-      while n > 2
+      while n > threshold
         n = n - 1
         result += generate(n)
       end
     elsif n==5
-      while n > 3
+      while n > threshold
         n = n - 1
         result += generate(n)
       end
     elsif n==6
-      while n > 4
+      while n > threshold
         n = n - 1
         result += generate(n)
       end
