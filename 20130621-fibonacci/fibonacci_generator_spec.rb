@@ -10,7 +10,7 @@ describe FibonacciGenerator do
   end
 
   context 'with the default 0 and 1 as the first and second values of the sequence' do
-    Then { pending; expect(generate(0)).to eq(0) }
+    Then { expect(generate(0)).to eq(0) }
     Then { pending; expect(generate(1)).to eq(1) }
     Then { pending; expect(generate(2)).to eq(1) }
     Then { pending; expect(generate(3)).to eq(2) }
