@@ -13,7 +13,7 @@ describe FibonacciGenerator do
     Then { expect(generate(0)).to eq(0) }
     Then { expect(generate(1)).to eq(1) }
     Then { expect(generate(2)).to eq(1) }
-    Then { pending; expect(generate(3)).to eq(2) }
+    Then { expect(generate(3)).to eq(2) }
     Then { pending; expect(generate(4)).to eq(3) }
     Then { pending; expect(generate(12)).to eq(144) }
   end

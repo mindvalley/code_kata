@@ -7,6 +7,10 @@ class FibonacciGenerator
     return @first if n==0
     return @second if n==1
 
-    @first + @second 
+    if n==2
+      @first + @second
+    elsif n==3
+      @first + @second + (@first + @second)
+    end
   end
 end
