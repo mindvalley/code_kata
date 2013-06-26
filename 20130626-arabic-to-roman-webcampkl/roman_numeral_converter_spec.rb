@@ -21,4 +21,6 @@ describe RomanNumeralConverter do
   Then { expect(convert 15).to eq('XV') }
   Then { expect(convert 20).to eq('XX') }
 
+  Then { expect(convert 4).to eq('IV') }
+
 end
