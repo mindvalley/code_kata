@@ -4,6 +4,8 @@ class RomanNumeralConverter
       "V"
     elsif number == 6
       "VI"
+    elsif number == 7
+      "VII"
     else
       "I" * number
     end
