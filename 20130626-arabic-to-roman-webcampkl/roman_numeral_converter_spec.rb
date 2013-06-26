@@ -24,4 +24,20 @@ describe RomanNumeralConverter do
   Then { expect(convert 4).to eq('IV') }
   Then { expect(convert 9).to eq('IX') }
 
+  Then { expect(convert 50).to eq('L') }
+  Then { expect(convert 40).to eq('XL') }
+
+  Then { expect(convert 90).to eq('XC') }
+  Then { expect(convert 100).to eq('C') }
+
+  Then { expect(convert 500).to eq('D') }
+  Then { expect(convert 400).to eq('CD') }
+
+  Then { expect(convert 1000).to eq('M') }
+  Then { expect(convert 900).to eq('CM') }
+
+  Then { expect(convert(2013)).to eq "MMXIII" }
+  Then { expect(convert(1949)).to eq "MCMXLIX" }
+  Then { expect(convert(3999)).to eq "MMMCMXCIX" }
+
 end
