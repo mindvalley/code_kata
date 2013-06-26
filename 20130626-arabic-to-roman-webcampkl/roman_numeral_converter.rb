@@ -1,11 +1,7 @@
 class RomanNumeralConverter
   def convert(number)
-    if number == 5
-      "V"
-    elsif number == 6
-      "VI"
-    elsif number == 7
-      "VII"
+    if number >= 5
+      "V" + ("I" * (number - 5))
     else
       "I" * number
     end
