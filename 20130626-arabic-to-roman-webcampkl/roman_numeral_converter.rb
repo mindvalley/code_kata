@@ -6,6 +6,11 @@ class RomanNumeralConverter
       number -= 10
     end
 
+    if number == 4
+      result << "IV"
+      number -= 4
+    end
+
     if number >= 5
       result << "V"
       number -= 5
