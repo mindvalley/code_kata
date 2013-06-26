@@ -7,6 +7,6 @@ describe RomanNumeralConverter do
 
   Given(:converter) { RomanNumeralConverter.new }
 
-  Then { expect(converter).to_not be(nil) }
+  Then { expect(converter.convert 1).to be('I') }
 
 end
