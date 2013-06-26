@@ -1,5 +1,9 @@
 class RomanNumeralConverter
   def convert(number)
-    "I" * number
+    if number == 5
+      "V"
+    else
+      "I" * number
+    end
   end
 end
