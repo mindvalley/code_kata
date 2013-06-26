@@ -15,5 +15,6 @@ describe RomanNumeralConverter do
   Then { expect(convert 2).to eq('II') }
   Then { expect(convert 5).to eq('V') }
   Then { expect(convert 6).to eq('VI') }
+  Then { expect(convert 7).to eq('VII') }
 
 end
