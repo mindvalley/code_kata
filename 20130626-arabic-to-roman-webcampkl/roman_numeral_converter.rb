@@ -21,6 +21,11 @@ class RomanNumeralConverter
       number -= 5
     end
 
-    result << "I" * number
+    while number >= 1
+      result << "I"
+      number -= 1
+    end
+
+    result
   end
 end
