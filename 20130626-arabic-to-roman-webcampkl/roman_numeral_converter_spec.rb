@@ -18,6 +18,6 @@ describe RomanNumeralConverter do
   Then { expect(convert 7).to eq('VII') }
   Then { expect(convert 10).to eq('X') }
   Then { expect(convert 11).to eq('XI') }
-  Then { pending; expect(convert 15).to eq('XV') }
+  Then { expect(convert 15).to eq('XV') }
 
 end

@@ -4,10 +4,13 @@ class RomanNumeralConverter
     if number >= 10
       result << "X"
       number -= 10
-    elsif number >= 5
+    end
+
+    if number >= 5
       result << "V"
       number -= 5
     end
+    
     result << "I" * number
   end
 end
