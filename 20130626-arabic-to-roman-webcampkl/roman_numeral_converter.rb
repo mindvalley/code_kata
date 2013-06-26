@@ -1,5 +1,5 @@
 class RomanNumeralConverter
   def convert(number)
-    "I"
+    "I" * number
   end
 end
