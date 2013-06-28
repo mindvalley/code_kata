@@ -16,5 +16,6 @@ describe RomanToArabic do
   Then { expect(convert 'VI').to eq 6 }
 
   Then { expect(convert 'X').to eq 10 }
+  Then { expect(convert 'XI').to eq 11 }
 
 end
