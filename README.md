@@ -13,4 +13,10 @@ To run the tests run
 rake
 ```
 
+To run Guard
+
+``` bash
+bundle exec guard
+```
+
 Have fun!
