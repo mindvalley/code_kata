@@ -13,6 +13,7 @@ class RomanToArabic
     result = 0
     VALUES_TABLE.each do |glyph, value|
       result += roman.count(glyph) * value
+      roman.delete(glyph)
     end
     result
   end
