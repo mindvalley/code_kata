@@ -20,4 +20,6 @@ describe RomanToArabic do
   Then { expect(convert 'XV').to eq 15 }
   Then { expect(convert 'XX').to eq 20 }
 
+  Then { pending; expect(convert 'IV').to eq 4 }
+
 end
