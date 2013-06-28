@@ -3,7 +3,7 @@ class RomanToArabic
     v_count = roman.count('V')
     i_count = roman.count('I')
     if v_count == 1
-      5
+      5 + i_count
     else
       i_count
     end
