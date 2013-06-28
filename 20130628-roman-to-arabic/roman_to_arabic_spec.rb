@@ -10,6 +10,6 @@ describe RomanToArabic do
 
   Then { expect(convert 'I').to eq 1 }
   Then { expect(convert 'II').to eq 2 }
-  Then { pending; expect(convert 'III').to eq 3 }
+  Then { expect(convert 'III').to eq 3 }
 
 end
