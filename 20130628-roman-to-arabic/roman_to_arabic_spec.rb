@@ -8,18 +8,18 @@ describe RomanToArabic do
     converter.convert roman
   end
 
-  Then { expect(convert 'I').to eq 1 }
-  Then { expect(convert 'II').to eq 2 }
-  Then { expect(convert 'III').to eq 3 }
+  # Then { expect(convert 'I').to eq 1 }
+  # Then { expect(convert 'II').to eq 2 }
+  # Then { expect(convert 'III').to eq 3 }
 
-  Then { expect(convert 'V').to eq 5 }
-  Then { expect(convert 'VI').to eq 6 }
+  # Then { expect(convert 'V').to eq 5 }
+  # Then { expect(convert 'VI').to eq 6 }
 
-  Then { expect(convert 'X').to eq 10 }
-  Then { expect(convert 'XI').to eq 11 }
-  Then { expect(convert 'XV').to eq 15 }
-  Then { expect(convert 'XX').to eq 20 }
+  # Then { expect(convert 'X').to eq 10 }
+  # Then { expect(convert 'XI').to eq 11 }
+  # Then { expect(convert 'XV').to eq 15 }
+  # Then { expect(convert 'XX').to eq 20 }
 
-  Then { pending; expect(convert 'IV').to eq 4 }
+  Then { expect(convert 'IV').to eq 4 }
 
 end

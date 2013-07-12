@@ -1,19 +1,17 @@
 class RomanToArabic
   VALUES_TABLE = [
+    ['IV', 4],
     ['X', 10],
     ['V', 5],
-    ['I', 1]
+    ['I', 1],
   ]
 
   def convert roman
-    x_count = roman.count('X')
-    v_count = roman.count('V')
-    i_count = roman.count('I')
-
     result = 0
     VALUES_TABLE.each do |glyph, value|
-      result += roman.count(glyph) * value
-      roman.delete(glyph)
+
+      result += roman.scan(glyph).count * value
+      roman.delete!(glyph)
     end
     result
   end
