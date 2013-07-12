@@ -1,0 +1,5 @@
+# put your extra gems here
+# gem 'rails'
+
+# require the base Gemfile
+eval(IO.read('../Gemfile'), binding)
