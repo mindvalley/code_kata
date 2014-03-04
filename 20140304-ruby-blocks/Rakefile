@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require 'ruby-progressbar'
+require_relative 'tasks/migration'
+require_relative 'tasks/lead'
+
+task :environment do
+  # mocks the :environment task
+end
+
+namespace :migrations do
+  desc 'migrate entries from old mongodb database to postgresql'
+  task :migrate_from_mongodb_to_postgres => :environment do
+    progress = ProgressBar.create title: 'Leads',
+      total: Tasks::Lead.count,
+      :format => '%a |%b>>%i| %p%% %t %c of %C %e'
+      
+    Tasks::Migration.migrate_all { progress.increment }
+
+    progress.finish
+  end
+end
